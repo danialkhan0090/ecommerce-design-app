@@ -11,7 +11,7 @@ const theme = createTheme({
       contrastText: "#fff",
     },
 
-    //icone colors
+    //icone colors light
     secondary: {
       light: "#ff5983",
       main: "#0D6EFD",

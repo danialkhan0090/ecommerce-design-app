@@ -158,10 +158,15 @@ const Header = () => {
     <Box>
       <AppBar
         position="static"
-        sx={{ backgroundColor: theme.palette.primary.light }}
+        sx={{
+          backgroundColor: theme.palette.primary.light,
+          color: theme.palette.secondary.light,
+          boxShadow: "none",
+          borderBottom: "1px solid rgb(204, 202, 202)",
+        }}
       >
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -169,21 +174,32 @@ const Header = () => {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
+            sx={{
+              display: {
+                xs: "none",
+                sm: "block",
+                color: "#8CB7F5",
+                marginLeft: "60px",
+              },
+            }}
           >
-            MUI
+            Brands
           </Typography>
           <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
+            <Search />
+
+            {/* <SearchIconWrapper> */}
+            {/* <SearchIcon /> */}
+            {/* </SearchIconWrapper> */}
+
             <StyledInputBase
-              placeholder="Search…"
+              sx={{ border: "1px solid #0D6EFD", marginLeft: "30px" }}
+              placeholder="Search… "
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
