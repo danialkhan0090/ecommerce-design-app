@@ -24,6 +24,11 @@ const theme = createTheme({
       dark: "#c1c3c5",
       contrastText: "#000",
     },
+    footer: {
+      background: "#FFFFFF",
+      textHeading: "#1C1C1C",
+      textData: "#8B96A5",
+    },
   },
 });
 
