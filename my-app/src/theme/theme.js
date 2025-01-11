@@ -25,31 +25,6 @@ const theme = createTheme({
       contrastText: "#000",
     },
   },
-  typography: {
-    fontFamily: "Roboto, Arial, sans-serif",
-    h1: {
-      fontSize: "2rem",
-      fontWeight: 600,
-    },
-    h2: {
-      fontSize: "1.75rem",
-      fontWeight: 600,
-    },
-  },
-  shape: {
-    borderRadius: 8,
-  },
-  spacing: 8, // default is 8px
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          textTransform: "none",
-          borderRadius: 50,
-        },
-      },
-    },
-  },
 });
 
 // Export the theme
