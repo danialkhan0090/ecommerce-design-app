@@ -6,20 +6,16 @@ import Person2Icon from "@mui/icons-material/Person2";
 import MessageIcon from "@mui/icons-material/Message";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-// import logoSymbol from "../assets/images/logoSymbol.png";
 import logoSymbol from "../assets/logo/logoSymbol.png";
-import banner from "../assets/images/banner.jpg";
-import { fontGrid } from "@mui/material/styles/cssUtils";
+import SubHeader from "./sub-header";
 
 const header = () => {
   const navbarStyle = {
     backgroundColor: "white",
-
-    // padding: "5px 0px 5px 0px",
+    padding: "5px 0px 5px 0px",
     boxShadow: "0 4px 2px -4px gray",
     display: "flex",
     justifyContent: "center",
-    // alignItems: "center",
   };
   const searchBoxContainerStyle = {
     marginLeft: "50px",
@@ -29,14 +25,14 @@ const header = () => {
   };
   const searchBoxStyle = {
     flex: "1",
-    padding: "10px",
+    padding: "7px",
     border: "2px solid #0D6EFD",
     borderRadius: "5px",
     borderTopRightRadius: "0px",
     borderBottomRightRadius: "0px",
   };
   const selectStyle = {
-    padding: "10px",
+    padding: "7px",
     border: "2px solid #0D6EFD",
     borderLeft: "none",
     borderTopRightRadius: "0px",
@@ -44,14 +40,14 @@ const header = () => {
     backgroundColor: "white",
   };
   const buttonStyle = {
-    padding: "5px",
+    padding: "2px",
     border: "3px solid #0D6EFD",
     // borderLeft: "none",
     // borderTopRightRadius: "5px",
     // borderBottomRightRadius: "5px",
     backgroundColor: "#0D6EFD",
     color: "white",
-    fontWeight: "bold",
+    textTransform: "none",
   };
   return (
     <>
@@ -67,8 +63,6 @@ const header = () => {
         <Typography
           variant="h6"
           sx={{
-            // paddingRight: "250px",
-            // marginRight: "500px",
             alignItems: "center",
             alignContent: "center",
             color: "#8CB7F5",
@@ -126,6 +120,7 @@ const header = () => {
           </Grid2>
         </div>
       </nav>
+      <SubHeader />
     </>
   );
 };

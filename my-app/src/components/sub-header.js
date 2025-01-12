@@ -1,7 +1,7 @@
 import { Grid2, Typography } from "@mui/material";
 import React from "react";
 import DehazeTwoToneIcon from "@mui/icons-material/DehazeTwoTone";
-import theme from "../theme/theme";
+// import theme from "../theme/theme";
 import Button from "@mui/material/Button";
 import Ship from "../assets/logo/Ship.png"; //../assets/images/Ship.png;
 function SubHeader() {

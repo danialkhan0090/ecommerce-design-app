@@ -10,7 +10,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
-        <Header2 />
         <Footer />
       </ThemeProvider>
     </div>
