@@ -8,6 +8,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import logoSymbol from "../assets/logo/logoSymbol.png";
 import SubHeader from "./sub-header";
+import Banner from "./banner";
 
 const header = () => {
   const navbarStyle = {
@@ -121,6 +122,7 @@ const header = () => {
         </div>
       </nav>
       <SubHeader />
+      <Banner />
     </>
   );
 };
