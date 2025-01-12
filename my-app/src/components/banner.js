@@ -17,17 +17,17 @@ function Banner() {
         sx={{ marginTop: "10px", backgroundColor: "#ECE9E9" }}
       >
         <Grid2
-          xs={3}
+          xs={6}
           display={"flex"}
           alignContent={"left"}
           alignItems={"left"}
           paddingLeft={"15px"}
           margin={"20px 0px 10px 80px"}
-          padding={"20px 0px 5px 20px"}
+          padding={"10px 0px 5px 20px"}
           sx={{ backgroundColor: "white" }}
           borderRadius={"5px"}
         >
-          <Stack>
+          <Stack spacing={1}>
             <Button
               variant="text"
               size="small"
@@ -54,7 +54,7 @@ function Banner() {
                 alignItems: "center",
                 justifyContent: "center",
                 paddingLeft: "10px",
-                paddingTop: "20px",
+                paddingTop: "9px",
                 paddingRight: "40px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -200,7 +200,7 @@ function Banner() {
           </Stack>
         </Grid2>
         <Grid2
-          xs={12}
+          xs={6}
           display={"flex"}
           alignItems={"center"}
           justifyContent={"center"}

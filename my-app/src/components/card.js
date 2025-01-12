@@ -17,7 +17,7 @@ export default function Cardian() {
           backgroundColor: "#E3F0FF",
           width: "248px",
           height: "206px",
-          borderRadius: "10px",
+          borderRadius: "5px",
           marginBottom: "3px",
         }}
       >
