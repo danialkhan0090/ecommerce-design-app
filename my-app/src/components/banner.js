@@ -1,6 +1,5 @@
-import { Card, Grid2, Typography } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import React from "react";
-import theme from "../theme/theme";
 import Stack from "@mui/material/Stack"; //stack is use to put buttons in column
 import Button from "@mui/material/Button";
 import image from "../assets/images/banner.jpg";
@@ -10,12 +9,7 @@ import Cardian from "./card";
 function Banner() {
   return (
     <>
-      <Grid2
-        container
-        // marginLeft={"120px"}
-        // marginRight={"130px"}
-        sx={{ marginTop: "10px", backgroundColor: "#ECE9E9" }}
-      >
+      <Grid2 container sx={{ marginTop: "10px", backgroundColor: "#ECE9E9" }}>
         <Grid2
           xs={6}
           display={"flex"}
@@ -70,9 +64,7 @@ function Banner() {
               size="small"
               style={{
                 fontSize: "11px",
-                // alignItems: "center",
-                // justifyContent: "center",
-                // paddingLeft: "10px",
+                paddingLeft: "10px",
                 paddingRight: "40px",
                 paddingTop: "9px",
                 backgroundColor: "white",
@@ -107,9 +99,7 @@ function Banner() {
               size="small"
               style={{
                 fontSize: "11px",
-                // alignItems: "center",
-                // justifyContent: "center",
-                // paddingLeft: "10px",
+                paddingLeft: "10px",
                 paddingRight: "22px",
                 paddingTop: "9px",
                 backgroundColor: "white",
@@ -126,9 +116,7 @@ function Banner() {
               size="small"
               style={{
                 fontSize: "11px",
-                // alignItems: "center",
-                // justifyContent: "center",
-                // paddingLeft: "10px",
+                paddingLeft: "10px",
                 paddingRight: "22px",
                 paddingTop: "9px",
                 backgroundColor: "white",
@@ -145,9 +133,7 @@ function Banner() {
               size="small"
               style={{
                 fontSize: "11px",
-                // alignItems: "center",
-                // justifyContent: "center",
-                // paddingLeft: "10px",
+                paddingLeft: "10px",
                 paddingRight: "40px",
                 paddingTop: "9px",
                 backgroundColor: "white",
@@ -164,9 +150,7 @@ function Banner() {
               size="small"
               style={{
                 fontSize: "11px",
-                // alignItems: "center",
-                // justifyContent: "center",
-                // paddingLeft: "10px",
+                paddingLeft: "10px",
                 paddingRight: "40px",
                 paddingTop: "9px",
                 backgroundColor: "white",
@@ -183,9 +167,7 @@ function Banner() {
               size="small"
               style={{
                 fontSize: "11px",
-                // alignItems: "center",
-                // justifyContent: "center",
-                // paddingLeft: "10px",
+                paddingLeft: "10px",
                 paddingRight: "40px",
                 paddingTop: "9px",
                 backgroundColor: "white",

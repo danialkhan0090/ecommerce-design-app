@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/header";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./theme/theme";
+import Section from "./components/section";
 import Footer from "./components/footer";
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
-        <Footer />
+        <Section />
       </ThemeProvider>
     </div>
   );

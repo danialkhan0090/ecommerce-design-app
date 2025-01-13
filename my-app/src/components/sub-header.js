@@ -1,17 +1,13 @@
 import { Grid2 } from "@mui/material";
 import React from "react";
 import DehazeTwoToneIcon from "@mui/icons-material/DehazeTwoTone";
-// import theme from "../theme/theme";
 import Button from "@mui/material/Button";
-import Ship from "../assets/logo/Ship.png"; //../assets/images/Ship.png;
+import Ship from "../assets/logo/Ship.png";
 function SubHeader() {
   return (
     <>
-      <Grid2 container marginLeft={"105px"} marginTop={"10px"}>
+      <Grid2 container marginLeft={"105px"} marginTop={"10px"} xs={12}>
         <Grid2
-          // xs={1}
-          // paddingTop={"4px"}
-          // paddingRight={"10px"}
           alignItems={"center"}
           justifyContent={"center"}
           justifyItems={"center"}
