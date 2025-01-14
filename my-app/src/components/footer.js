@@ -25,7 +25,7 @@ function Footer() {
     gap: 0px;
     width: 100%;
     background-color: white;
-    margin: 5px 110px 0px 4px;
+    margin: 5px 5px 0px 4px;
   `;
 
   const GridItem = styled.div`
@@ -36,12 +36,12 @@ function Footer() {
   `;
   return (
     <>
-      <Grid2 container sx={{ backgroundColor: "offwhite" }}>
+      <Grid2 container sx={{ backgroundColor: "" }}>
         <Stack
           style={{
-            marginLeft: "82px",
+            marginLeft: "50px",
             paddingTop: "30px",
-            paddingRight: "30px",
+            paddingRight: "25px",
           }}
         >
           <Grid>
@@ -74,13 +74,35 @@ function Footer() {
                 you can inspect
               </Typography>
               <Stack direction="row" spacing={1} padding={"10px 0px 0px 0px"}>
-                <FacebookRoundedIcon sx={{ color: "#B0D4FF" }} />
-                <TwitterIcon sx={{ color: "#B0D4FF" }} />
-                <InstagramIcon sx={{ color: " pink" }} />
-                <LinkedInIcon sx={{ color: "#B0D4FF" }} />
-                <YouTubeIcon sx={{ color: "red" }} />
+                <FacebookRoundedIcon
+                  sx={{
+                    color: "#B0D4FF",
+                    marginRight: "10px",
+                    marginTop: "5px",
+                  }}
+                />
+                <TwitterIcon
+                  sx={{
+                    color: "#B0D4FF",
+                    marginRight: "10px",
+                    marginTop: "5px",
+                  }}
+                />
+                <InstagramIcon
+                  sx={{ color: " pink", marginRight: "10px", marginTop: "5px" }}
+                />
+                <LinkedInIcon
+                  sx={{
+                    color: "#B0D4FF",
+                    marginRight: "10px",
+                    marginTop: "5px",
+                  }}
+                />
+                <YouTubeIcon
+                  sx={{ color: "red", marginRight: "10px", marginTop: "5px" }}
+                />
               </Stack>
-            </GridItem>{" "}
+            </GridItem>
             <GridItem>
               <Typography
                 sx={{

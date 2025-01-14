@@ -19,9 +19,10 @@ const header = () => {
   };
   const searchBoxContainerStyle = {
     marginLeft: "50px",
-    width: "70%",
+    width: "85%",
     display: "flex",
     alignItems: "center",
+    paddingLeft: "20px",
   };
   const searchBoxStyle = {
     flex: "1",
@@ -90,7 +91,8 @@ const header = () => {
               style={{
                 paddingLeft: "20px",
                 paddingRight: "20px",
-                marginBottom: "1px",
+                marginTop: "1px",
+                marginBottom: "0px",
               }}
             >
               search
@@ -109,31 +111,113 @@ const header = () => {
                 alignItems={"center"}
               >
                 <Stack>
-                  <Person2Icon sx={{ fontSize: 18, color: "#8B96A5" }} />
-                  <Button variant="text">profile</Button>
+                  <Person2Icon
+                    sx={{
+                      fontSize: 23,
+                      color: "#8B96A5",
+                      marginLeft: "20px",
+                    }}
+                  />
+                  <Button
+                    variant="text"
+                    size="small"
+                    style={{
+                      color: "#8B96A5",
+                      fontSize: "15px",
+                      textTransform: "none",
+                      // fontWeight: "bold",
+                      fontStyle: "fantasy",
+                    }}
+                  >
+                    Profile
+                  </Button>
                 </Stack>
-                {/* <Typography sx={{ color: "#8B96A5", fontSize: "14px" }}>
-                  profile
-                </Typography> */}
               </Grid2>
 
-              <Grid2 marginTop={1} justifyContent={"center"}>
-                <MessageIcon sx={{ fontSize: 18, color: "#8B96A5" }} />
-                <Typography sx={{ color: "#8B96A5", fontSize: "14px" }}>
-                  Messages
-                </Typography>
+              <Grid2
+                marginTop={1}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Stack>
+                  <MessageIcon
+                    sx={{
+                      fontSize: 23,
+                      color: "#8B96A5",
+                      marginLeft: "20px",
+                    }}
+                  />
+                  <Button
+                    variant="text"
+                    size="small"
+                    style={{
+                      color: "#8B96A5",
+                      fontSize: "15px",
+                      textTransform: "none",
+                      // fontWeight: "bold",
+                      fontStyle: "fantasy",
+                    }}
+                  >
+                    Message
+                  </Button>
+                </Stack>
               </Grid2>
-              <Grid2 marginTop={1} justifyContent={"center"}>
-                <FavoriteIcon sx={{ fontSize: 18, color: "#8B96A5" }} />
-                <Typography sx={{ color: "#8B96A5", fontSize: "14px" }}>
-                  Orders
-                </Typography>
+
+              <Grid2
+                marginTop={1}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Stack>
+                  <FavoriteIcon
+                    sx={{
+                      fontSize: 23,
+                      color: "#8B96A5",
+                      marginLeft: "20px",
+                    }}
+                  />
+                  <Button
+                    variant="text"
+                    size="small"
+                    style={{
+                      color: "#8B96A5",
+                      fontSize: "15px",
+                      textTransform: "none",
+                      // fontWeight: "bold",
+                      fontStyle: "fantasy",
+                    }}
+                  >
+                    Orders
+                  </Button>
+                </Stack>
               </Grid2>
-              <Grid2 marginTop={1} justifyContent={"center"}>
-                <ShoppingCartIcon sx={{ fontSize: 18, color: "#8B96A5" }} />
-                <Typography sx={{ color: "#8B96A5", fontSize: "14px" }}>
-                  My cart
-                </Typography>
+              <Grid2
+                marginTop={1}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Stack>
+                  <ShoppingCartIcon
+                    sx={{
+                      fontSize: 23,
+                      color: "#8B96A5",
+                      marginLeft: "21px",
+                    }}
+                  />
+                  <Button
+                    variant="text"
+                    size="small"
+                    style={{
+                      color: "#8B96A5",
+                      fontSize: "15px",
+                      textTransform: "none",
+                      // fontWeight: "bold",
+                      fontStyle: "fantasy",
+                    }}
+                  >
+                    My cart
+                  </Button>
+                </Stack>
               </Grid2>
             </Grid2>
           </div>

@@ -9,14 +9,21 @@ import Cardian from "./card";
 function Banner() {
   return (
     <>
-      <Grid2 container sx={{ marginTop: "10px", backgroundColor: "#ECE9E9" }}>
+      <Grid2
+        container
+        sx={{
+          marginTop: "10px",
+          width: "100%",
+          backgroundColor: "#ECE9E9",
+        }}
+      >
         <Grid2
-          xs={6}
+          xs={12}
           display={"flex"}
           alignContent={"left"}
           alignItems={"left"}
-          paddingLeft={"15px"}
-          margin={"20px 0px 10px 80px"}
+          paddingLeft={"20px"}
+          margin={"20px 0px 10px 0px"}
           padding={"10px 0px 5px 20px"}
           sx={{ backgroundColor: "white" }}
           borderRadius={"5px"}
@@ -30,7 +37,7 @@ function Banner() {
                 alignItems: "center",
                 justifyContent: "center",
                 paddingLeft: "10px",
-                paddingRight: "55px",
+                paddingRight: "150px",
                 backgroundColor: "#E5F1FF",
                 color: "#1C1C1C",
                 fontWeight: "bold",
@@ -49,7 +56,7 @@ function Banner() {
                 justifyContent: "center",
                 paddingLeft: "10px",
                 paddingTop: "9px",
-                paddingRight: "40px",
+                paddingRight: "140px",
                 backgroundColor: "white",
                 color: "#8B96A5",
                 // fontWeight: "bold",
@@ -65,7 +72,7 @@ function Banner() {
               style={{
                 fontSize: "11px",
                 paddingLeft: "10px",
-                paddingRight: "40px",
+                paddingRight: "150px",
                 paddingTop: "9px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -82,7 +89,7 @@ function Banner() {
               style={{
                 fontSize: "11px",
                 paddingLeft: "9px",
-                paddingRight: "20px",
+                paddingRight: "130px",
                 paddingTop: "9px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -100,7 +107,7 @@ function Banner() {
               style={{
                 fontSize: "11px",
                 paddingLeft: "10px",
-                paddingRight: "22px",
+                paddingRight: "138px",
                 paddingTop: "9px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -117,7 +124,7 @@ function Banner() {
               style={{
                 fontSize: "11px",
                 paddingLeft: "10px",
-                paddingRight: "22px",
+                paddingRight: "133px",
                 paddingTop: "9px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -134,7 +141,7 @@ function Banner() {
               style={{
                 fontSize: "11px",
                 paddingLeft: "10px",
-                paddingRight: "40px",
+                paddingRight: "153px",
                 paddingTop: "9px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -151,7 +158,7 @@ function Banner() {
               style={{
                 fontSize: "11px",
                 paddingLeft: "10px",
-                paddingRight: "40px",
+                paddingRight: "154px",
                 paddingTop: "9px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -168,7 +175,7 @@ function Banner() {
               style={{
                 fontSize: "11px",
                 paddingLeft: "10px",
-                paddingRight: "40px",
+                paddingRight: "150px",
                 paddingTop: "9px",
                 backgroundColor: "white",
                 color: "#8B96A5",
@@ -187,22 +194,22 @@ function Banner() {
           alignItems={"center"}
           justifyContent={"center"}
           margin={"20px 0px 10px 0px"}
-          padding={"8px 2px 5px 10px"}
+          padding={"8px 2px 5px 20px"}
           sx={{ backgroundColor: "white" }}
         >
           <img
             src={image}
             alt="Banner"
-            style={{ width: "100%", height: "350px" }}
+            style={{ width: "100%", height: "350px", borderRadius: "5px" }}
           />
         </Grid2>
         <Grid2
-          xs={12}
+          xs={4}
           display={"flex"}
           alignItems={"center"}
           justifyContent={"center"}
           margin={"20px 0px 10px 0px"}
-          padding={"5px 2px 1px 10px"}
+          padding={"5px 2px 1px 20px"}
           sx={{ backgroundColor: "white" }}
         >
           <Stack>
@@ -211,12 +218,12 @@ function Banner() {
             <img
               src={glad}
               alt="glad"
-              style={{ width: "90%", height: "70px" }}
+              style={{ width: "95%", height: "70px" }}
             />
             <img
               src={blog}
               alt="blog"
-              style={{ width: "90%", height: "70px", marginTop: "3px" }}
+              style={{ width: "95%", height: "70px", marginTop: "3px" }}
             />
           </Stack>
         </Grid2>

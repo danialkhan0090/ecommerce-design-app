@@ -6,7 +6,7 @@ import Ship from "../assets/logo/Ship.png";
 function SubHeader() {
   return (
     <>
-      <Grid2 container marginLeft={"105px"} marginTop={"10px"} xs={12}>
+      <Grid2 container marginLeft={"3px"} marginTop={"10px"} xs={12}>
         <Grid2
           alignItems={"center"}
           justifyContent={"center"}
@@ -27,7 +27,7 @@ function SubHeader() {
                 paddingRight: "20px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >
@@ -43,7 +43,7 @@ function SubHeader() {
                 paddingRight: "20px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >
@@ -59,7 +59,7 @@ function SubHeader() {
                 paddingRight: "20px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >
@@ -75,7 +75,7 @@ function SubHeader() {
                 paddingRight: "20px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >
@@ -91,7 +91,7 @@ function SubHeader() {
                 paddingRight: "20px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >
@@ -107,7 +107,7 @@ function SubHeader() {
                 paddingRight: "250px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >
@@ -120,10 +120,11 @@ function SubHeader() {
                 fontSize: "13px",
                 alignItems: "center",
                 justifyContent: "center",
-                paddingRight: "40px",
+                paddingRight: "20px",
+                marginLeft: "213px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >
@@ -139,7 +140,7 @@ function SubHeader() {
                 paddingRight: "20px",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "arial",
+                fontFamily: "fantasy",
                 textTransform: "none",
               }}
             >

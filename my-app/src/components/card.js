@@ -10,15 +10,16 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 export default function Cardian() {
   return (
-    <Box sx={{ minWidth: 275 }}>
+    <Box sx={{ minWidth: 300 }}>
       <Card
         variant="outlined"
         sx={{
           backgroundColor: "#E3F0FF",
-          width: "248px",
+          width: "300px",
           height: "206px",
           borderRadius: "5px",
           marginBottom: "3px",
+          marginRight: "15px",
         }}
       >
         <CardContent>
@@ -37,8 +38,8 @@ export default function Cardian() {
               color="secondary"
               size="small"
               style={{
-                paddingLeft: "55px",
-                paddingRight: "55px",
+                paddingLeft: "80px",
+                paddingRight: "80px",
                 // paddingBottom: "10px",
                 marginBottom: "20px",
                 marginLeft: "26px",
