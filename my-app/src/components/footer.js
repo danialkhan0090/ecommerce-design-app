@@ -1,4 +1,4 @@
-import { Grid2, Stack } from "@mui/material";
+import { Box, Grid2, Stack } from "@mui/material";
 import React from "react";
 import logoSymbol from "../assets/logo/logoSymbol.png";
 import Typography from "@mui/material/Typography";
