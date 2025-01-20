@@ -1,4 +1,4 @@
-import { Box, Grid2, Stack } from "@mui/material";
+import { Box, Button, Grid2, Stack } from "@mui/material";
 import React from "react";
 import logoSymbol from "../assets/logo/logoSymbol.png";
 import Typography from "@mui/material/Typography";
@@ -11,7 +11,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import styled from "styled-components";
 import Google from "../assets/logo/market.png";
 import Apple from "../assets/logo/market-button.png";
-
+import us from "../assets/logo/us.png";
 function Footer() {
   const Stack = styled.div`
     display: flex;
@@ -99,7 +99,7 @@ function Footer() {
                   }}
                 />
                 <YouTubeIcon
-                  sx={{ color: "red", marginRight: "10px", marginTop: "5px" }}
+                  sx={{ color: "pink", marginRight: "10px", marginTop: "5px" }}
                 />
               </Stack>
             </GridItem>
@@ -197,6 +197,49 @@ function Footer() {
             </GridItem>
           </Grid>
         </Stack>
+      </Grid2>
+      <Grid2
+        container
+        spacing={2}
+        height={"100px"}
+        justifyContent={"space-between"}
+        sx={{
+          backgroundColor: "#f0f0f0",
+          color: "theme.palette.footer.text",
+        }}
+      >
+        <Grid2 padding={"15px 0px 20px 100px"} height={"100px"}>
+          {" "}
+          {/* <CopyrightIcon fontSize="5px" sx={{ color: "#8B96A5" }} /> */}
+          <Typography
+            sx={{ color: "#8B96A5", fontSize: "12px", paddingTop: "40px" }}
+          >
+            {" "}
+            © 2023 Ecommerce
+          </Typography>
+        </Grid2>
+        <Grid2 padding={"15px 100px 20px 00px"} height={"100px"}>
+          <img
+            src={us}
+            alt="usflag"
+            style={{
+              paddingRight: "0px",
+              height: "15px",
+              marginBottom: "15px",
+            }}
+          />
+          <Button
+            variant="text"
+            sx={{
+              textTransform: "none",
+              fontFamily: "fantasy",
+              color: "#8B96A5",
+              marginBottom: "35px",
+            }}
+          >
+            English ▲
+          </Button>
+        </Grid2>
       </Grid2>
     </>
   );
