@@ -29,7 +29,6 @@ function Form() {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "flex-start",
               width: " 400px",
               paddingLeft: 2,
               paddingTop: "0px",
