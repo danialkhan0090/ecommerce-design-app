@@ -3,7 +3,6 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import shirt from "../../assets/images/shirt.jpg";
 import shirt2 from "../../assets/images/shirt2.jpg";
@@ -14,90 +13,130 @@ import trouser from "../../assets/images/trouser.jpg";
 import headset from "../../assets/images/headset.jpg";
 import cup from "../../assets/images/cup.jpg";
 import cattle from "../../assets/images/cattle.jpg";
-import catle from "../../assets/images/cattle.jpg";
+import logo from "../../assets/logo/aus.png";
 
-import { Grid2 } from "@mui/material";
+import { Grid2, Stack } from "@mui/material";
 
 export default function MediaCard() {
   const data = [
     {
       image: shirt,
       title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      description: "T-shirt with multiple colors for men",
+      price: "$10.30",
     },
     {
       image: shirt2,
       title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      description: "Jeans shorts for men blue color",
+      price: "$10.30",
     },
     {
       image: shirt3,
-      title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      title: "12.50",
+      description: "Brown winter coat medium size",
+      price: "$12.50",
     },
     {
       image: bag,
-      title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      title: "34.00",
+      description: "Leather wallet black colored",
+      price: "$34.00",
     },
     {
       image: bag2,
-      title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      title: "99.00",
+      description: "Girls bag for shopping & fashion",
+      price: "$99.00",
     },
     {
       image: trouser,
-      title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      title: "9.99",
+      description: "Headset for gaming with mic",
+      price: "$9.99",
     },
     {
       image: headset,
-      title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      title: "8.99",
+      description: "Ladies bag for college and office",
+      price: "$8.99",
     },
     {
       image: bag2,
-      title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      title: "10.39",
+      description: "Mud mug, decoration purpose",
+      price: "$10.39",
     },
     {
       image: shirt,
       title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      description: "Electric kettle for tea making",
+      price: "$10.30",
     },
     {
       image: shirt,
-      title: "10.30",
-      Typography: "T-shirt with multiple colors for men",
+      title: "80.95",
+      description: "T-shirt with multiple colors for men",
+      price: "$80.95",
     },
   ];
+
   return (
     <>
-      <Grid2 container spacing={2}>
-        {data.map((item, index) => (
-          <Grid2 item xs={12} sm={6} md={4} lg={2.4} key={index}>
-            <Card sx={{ width: 320 }}>
-              <CardMedia
-                sx={{ height: 120 }}
-                image="image"
-                title={item?.title}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-              </CardActions>
-            </Card>
-          </Grid2>
-        ))}
+      <Grid2 container sx={{ maxWidth: "1200px", margin: "auto" }}>
+        <Grid2
+          item
+          xs={12}
+          sx={{
+            textAlign: "left",
+            padding: "10px 0px 0px 0px",
+            marginLeft: "15px",
+          }}
+        >
+          <Typography variant="h5" component="div">
+            Recommended Items
+          </Typography>
+        </Grid2>
+        <Grid2 container columnSpacing={6} justifyContent={"center"}>
+          {data.map((item, index) => (
+            <Grid2
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              lg={2.4}
+              key={index}
+              justifyContent={"center"}
+              alignItems={"center"}
+              padding={"10px"}
+            >
+              <Card
+                sx={{
+                  width: 180,
+                  padding: "10px 10px 0px 10px",
+                }}
+              >
+                <CardMedia
+                  sx={{ height: 140, objectFit: "cover" }}
+                  image={item.image}
+                  title={item.title}
+                />
+                <CardActions>
+                  <Stack>
+                    <Typography variant="h6">{item.price}</Typography>
+                    <Typography
+                      variant="body2"
+                      textAlign={"left"}
+                      color="#8E8E8E"
+                    >
+                      {item.description}
+                    </Typography>
+                  </Stack>
+                </CardActions>
+              </Card>
+            </Grid2>
+          ))}
+        </Grid2>
       </Grid2>
     </>
   );
