@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 function Banner() {
   return (
     <>
-      <Box sx={{ width: "100%" }}>
+      <Box>
         <Grid2
           container
           sx={{
@@ -202,7 +202,7 @@ function Banner() {
             <img
               src={image}
               alt="Banner"
-              style={{ width: "100%", height: "350px", borderRadius: "5px" }}
+              style={{ width: "665px", height: "360px", borderRadius: "5px" }}
             />
           </Grid2>
           <Grid2

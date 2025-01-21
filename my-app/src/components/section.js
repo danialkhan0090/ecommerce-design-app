@@ -3,15 +3,16 @@ import Footer from "./footer";
 import FooterSearchbox from "./footerSearchbox";
 import Suppliers from "./suppliers";
 import Form from "./formGrid";
-import ShirtCard from "../components/cards-for-items/shirtCards";
+import ShirtCard from "./cards-for-items";
+import ServiceCard from "./servicesCards";
 function Section() {
   return (
     <>
-      <Suppliers />
       <Form />
       <ShirtCard />
+      <ServiceCard />
+      <Suppliers />
       <FooterSearchbox />
-
       <Footer />
     </>
   );

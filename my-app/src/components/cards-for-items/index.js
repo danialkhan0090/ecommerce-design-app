@@ -22,19 +22,19 @@ export default function MediaCard() {
     {
       image: shirt,
       title: "10.30",
-      description: "T-shirt with multiple colors for men",
+      description: "T-shirt with multiple colors",
       price: "$10.30",
     },
     {
       image: shirt2,
       title: "10.30",
-      description: "Jeans shorts for men blue color",
+      description: "Jeans shorts for men ",
       price: "$10.30",
     },
     {
       image: shirt3,
       title: "12.50",
-      description: "Brown winter coat medium size",
+      description: "Brown winter coat medium",
       price: "$12.50",
     },
     {
@@ -46,7 +46,7 @@ export default function MediaCard() {
     {
       image: bag2,
       title: "99.00",
-      description: "Girls bag for shopping & fashion",
+      description: "Girls bag for shopping",
       price: "$99.00",
     },
     {
@@ -58,46 +58,46 @@ export default function MediaCard() {
     {
       image: headset,
       title: "8.99",
-      description: "Ladies bag for college and office",
+      description: "Ladies bag for college ",
       price: "$8.99",
     },
     {
-      image: bag2,
+      image: cup,
       title: "10.39",
-      description: "Mud mug, decoration purpose",
+      description: "Mud mug, decoration ",
       price: "$10.39",
     },
     {
-      image: shirt,
+      image: cattle,
       title: "10.30",
       description: "Electric kettle for tea making",
       price: "$10.30",
     },
     {
-      image: shirt,
+      image: shirt3,
       title: "80.95",
-      description: "T-shirt with multiple colors for men",
+      description: "T-shirt with multiple colors",
       price: "$80.95",
     },
   ];
 
   return (
     <>
-      <Grid2 container sx={{ maxWidth: "1200px", margin: "auto" }}>
+      <Grid2 container sx={{ margin: "auto" }}>
         <Grid2
           item
           xs={12}
           sx={{
             textAlign: "left",
-            padding: "10px 0px 0px 0px",
-            marginLeft: "15px",
+            padding: "20px 0px 10px 0px",
+            marginLeft: "60px",
           }}
         >
-          <Typography variant="h5" component="div">
+          <Typography variant="h5" component="div" fontWeight={"bold"}>
             Recommended Items
           </Typography>
         </Grid2>
-        <Grid2 container columnSpacing={6} justifyContent={"center"}>
+        <Grid2 container columnSpacing={2} justifyContent={"center"}>
           {data.map((item, index) => (
             <Grid2
               item
@@ -106,18 +106,21 @@ export default function MediaCard() {
               md={4}
               lg={2.4}
               key={index}
+              display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
-              padding={"10px"}
+              padding={"5px 10px 5px 10px"}
             >
               <Card
                 sx={{
-                  width: 180,
-                  padding: "10px 10px 0px 10px",
+                  width: 220,
                 }}
               >
                 <CardMedia
-                  sx={{ height: 140, objectFit: "cover" }}
+                  sx={{
+                    height: 200,
+                    objectFit: "cover",
+                  }}
                   image={item.image}
                   title={item.title}
                 />

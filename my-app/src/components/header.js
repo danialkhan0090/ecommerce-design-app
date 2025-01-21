@@ -52,7 +52,7 @@ const header = () => {
   };
   return (
     <>
-      <Grid2>
+      <Grid2 xs={12} md={12} lg={12} sm={12}>
         <nav style={navbarStyle}>
           <Grid2
             size={2}

@@ -17,12 +17,15 @@ function Form() {
       <Grid2
         container
         height={"400px"}
-        width={"100%"}
+        width={"1270px"}
+        justifyContent={"space-between"}
         sx={{
           backgroundImage: `url(${formImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          justifyContent: "space-between",
+          margin: "0px 30px 0px 20px",
+          display: "flex",
+          justifyItems: "center",
         }}
       >
         <Grid2 item xs={12} md={6} lg={6} margin="25px 0px 20px 20px">

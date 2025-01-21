@@ -3,6 +3,7 @@ import React from "react";
 import DehazeTwoToneIcon from "@mui/icons-material/DehazeTwoTone";
 import Button from "@mui/material/Button";
 import Ship from "../assets/logo/Ship.png";
+import ExpendMoreIcon from "@mui/icons-material/ExpandMore";
 function SubHeader() {
   return (
     <>
@@ -111,8 +112,9 @@ function SubHeader() {
                 textTransform: "none",
               }}
             >
-              Help ⮟
+              Help <ExpendMoreIcon style={{ marginTop: "3px" }} />
             </Button>
+
             <Button
               variant="text"
               size="small"
@@ -128,7 +130,7 @@ function SubHeader() {
                 textTransform: "none",
               }}
             >
-              English ,USD ⮟
+              English ,USD <ExpendMoreIcon style={{ marginTop: "3px" }} />
             </Button>
             <Button
               variant="text"
@@ -144,7 +146,7 @@ function SubHeader() {
                 textTransform: "none",
               }}
             >
-              Ship to ⮟
+              Ship to <ExpendMoreIcon style={{ marginTop: "3px" }} />
               <img
                 src={Ship}
                 alt="Ship"
