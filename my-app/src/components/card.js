@@ -25,7 +25,7 @@ export default function Cardian() {
         <CardContent>
           <Stack direction="row" spacing={1} alignItems="center">
             <AccountCircleIcon style={{ color: "#C7E1FF", fontSize: "50px" }} />
-            <Typography variant="h6">
+            <Typography variant="h6" textAlign={"left"} fontFamily={"fantasy"}>
               Hi, user <br />
               Let's get started
             </Typography>
@@ -42,6 +42,7 @@ export default function Cardian() {
                 paddingRight: "80px",
                 // paddingBottom: "10px",
                 marginBottom: "20px",
+
                 marginLeft: "26px",
                 alignItems: "center",
                 justifyContent: "center",

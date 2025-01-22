@@ -17,18 +17,19 @@ function Form() {
       <Grid2
         container
         height={"400px"}
-        width={"1270px"}
+        width={"auto"}
         justifyContent={"space-between"}
         sx={{
           backgroundImage: `url(${formImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          margin: "0px 30px 0px 20px",
           display: "flex",
           justifyItems: "center",
+          margin: "0px 47px 0px 46px",
+          borderRadius: "5px",
         }}
       >
-        <Grid2 item xs={12} md={6} lg={6} margin="25px 0px 20px 20px">
+        <Grid2 item xs={6} sm={6} md={6} lg={6} margin="25px 0px 20px 20px">
           <Box
             sx={{
               display: "flex",
@@ -40,7 +41,7 @@ function Form() {
               borderRadius: "5px",
             }}
           >
-            <Box sx={{ height: "390px", width: "100%" }}>
+            <Box sx={{ height: "390px", width: "100%" }} sm={6}>
               <Stack>
                 <Typography
                   variant="h4"
@@ -66,7 +67,7 @@ function Form() {
         </Grid2>
         <Grid2
           item
-          xs={12}
+          xs={6}
           md={6}
           lg={6}
           // justifyItems={"flex-end"}
@@ -75,6 +76,7 @@ function Form() {
           // justifyContentItems={"end"}
         >
           <Box
+            sm={12}
             sx={{
               display: "flex",
               justifyContent: "flex-end",
@@ -84,7 +86,6 @@ function Form() {
               // marginLeft: "1080px",
               backgroundColor: "white",
               margin: "20px 23px 10px 200px",
-
               borderRadius: "5px",
             }}
           >
@@ -121,7 +122,7 @@ function Form() {
                     />
                   </Grid>
                   {/* Third row - Quantity and file upload fields */}
-                  <Grid item xs={6}>
+                  <Grid item xs={12}>
                     <TextField
                       label="Quantity"
                       variant="outlined"

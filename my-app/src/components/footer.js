@@ -214,11 +214,10 @@ function Footer() {
           <Typography
             sx={{ color: "#8B96A5", fontSize: "12px", paddingTop: "40px" }}
           >
-            {" "}
             © 2023 Ecommerce
           </Typography>
         </Grid2>
-        <Grid2 padding={"15px 100px 20px 00px"} height={"100px"}>
+        <Grid2 padding={"45px 100px 20px 00px"} height={"100px"}>
           <img
             src={us}
             alt="usflag"

@@ -20,7 +20,9 @@ function Banner() {
           }}
         >
           <Grid2
-            xs={12}
+            xs={6}
+            md={2}
+            lg={2}
             display={"flex"}
             alignContent={"left"}
             alignItems={"left"}
@@ -191,7 +193,9 @@ function Banner() {
             </Stack>
           </Grid2>
           <Grid2
-            xs={6}
+            xs={12}
+            md={6}
+            lg={6}
             display={"flex"}
             alignItems={"center"}
             justifyContent={"center"}
@@ -202,11 +206,13 @@ function Banner() {
             <img
               src={image}
               alt="Banner"
-              style={{ width: "665px", height: "360px", borderRadius: "5px" }}
+              style={{ width: "700px", height: "353px", borderRadius: "5px" }}
             />
           </Grid2>
           <Grid2
-            xs={4}
+            xs={12}
+            md={12}
+            lg={4}
             display={"flex"}
             alignItems={"center"}
             justifyContent={"center"}

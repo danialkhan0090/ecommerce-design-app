@@ -126,7 +126,9 @@ export default function MediaCard() {
                 />
                 <CardActions>
                   <Stack>
-                    <Typography variant="h6">{item.price}</Typography>
+                    <Typography variant="h6" textAlign={"left"}>
+                      {item.price}
+                    </Typography>
                     <Typography
                       variant="body2"
                       textAlign={"left"}
