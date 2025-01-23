@@ -1,7 +1,6 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import shirt from "../../assets/images/shirt.jpg";
@@ -13,8 +12,6 @@ import trouser from "../../assets/images/trouser.jpg";
 import headset from "../../assets/images/headset.jpg";
 import cup from "../../assets/images/cup.jpg";
 import cattle from "../../assets/images/cattle.jpg";
-import logo from "../../assets/logo/aus.png";
-
 import { Grid2, Stack } from "@mui/material";
 
 export default function MediaCard() {

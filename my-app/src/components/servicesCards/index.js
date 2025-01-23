@@ -1,16 +1,12 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import first from "../../assets/images/1.jpg";
 import second from "../../assets/images/2.jpg";
 import third from "../../assets/images/3.jpg";
 import fourth from "../../assets/images/4.jpg";
-import shirt2 from "../../assets/images/shirt2.jpg";
-import shirt3 from "../../assets/images/shirt3.jpg";
-
-import { Grid2, Stack } from "@mui/material";
+import { Grid2 } from "@mui/material";
 
 export default function ServiceCard() {
   const data = [

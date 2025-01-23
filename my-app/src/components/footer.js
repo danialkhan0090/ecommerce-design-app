@@ -1,8 +1,7 @@
-import { Box, Button, Grid2, Stack } from "@mui/material";
+import { Button, Grid2 } from "@mui/material";
 import React from "react";
 import logoSymbol from "../assets/logo/logoSymbol.png";
 import Typography from "@mui/material/Typography";
-import theme from "../theme/theme";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
