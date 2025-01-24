@@ -23,7 +23,7 @@ function Suppliers() {
       <Box>
         <Grid2
           height={"50px"}
-          marginLeft={"29px"}
+          marginLeft={"33px"}
           container
           justifyContent={"flex-start"}
         >

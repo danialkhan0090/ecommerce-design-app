@@ -29,13 +29,12 @@ export default function ServiceCard() {
       <Grid2
         container
         maxWidth={"1200px"}
-        margin={"auto"}
-        padding={"20px 20px 7px 20px"}
+        marginLeft={"58px"}
+        padding={"20px 20px 7px 0px"}
       >
-        {" "}
-        <Typography variant="h5" component="div">
+        <Typography variant="h5" component="div" fontWeight={"bold"}>
           Our Extra services
-        </Typography>{" "}
+        </Typography>
       </Grid2>
       <Grid2
         container

@@ -16,6 +16,7 @@ function Form() {
     <>
       <Grid2
         container
+        display={"flex"}
         height={"400px"}
         width={"auto"}
         justifyContent={"space-between"}
@@ -29,7 +30,14 @@ function Form() {
           borderRadius: "5px",
         }}
       >
-        <Grid2 item xs={6} sm={6} md={6} lg={6} margin="25px 0px 20px 20px">
+        <Grid2
+          display={"flex"}
+          xs={6}
+          sm={6}
+          md={6}
+          lg={6}
+          margin="25px 0px 20px 20px"
+        >
           <Box
             sx={{
               display: "flex",
@@ -66,7 +74,6 @@ function Form() {
           </Box>
         </Grid2>
         <Grid2
-          item
           xs={6}
           md={6}
           lg={6}

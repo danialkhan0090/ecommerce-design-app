@@ -1,4 +1,4 @@
-import { Grid2, Stack, Typography } from "@mui/material";
+import { Button, Grid2, Stack, Typography } from "@mui/material";
 import React from "react";
 import home from "../../assets/images/Home.png";
 import chair from "../../assets/images/chair.png";
@@ -56,6 +56,7 @@ export default function HomeAndOutdoor() {
         display={"flex"}
       >
         <Grid2
+          display={"flex"}
           item
           xs={12}
           sm={6}
@@ -71,7 +72,46 @@ export default function HomeAndOutdoor() {
             borderTopLeftRadius: "6px",
             borderBottomLeftRadius: "6px",
           }}
-        ></Grid2>
+        >
+          <Grid2
+            alignSelf={"flex-start"}
+            style={{
+              marginTop: "14px",
+              marginLeft: "19px",
+            }}
+          >
+            <Grid2 display={"flex"} width={"90px"}>
+              <Typography
+                style={{
+                  textAlign: "left",
+                  fontSize: "18px",
+                  fontWeight: "bold",
+                }}
+              >
+                Home and outdoor
+              </Typography>
+            </Grid2>
+            <Grid2 display={"flex"}>
+              <Button
+                variant="contained"
+                size="small"
+                style={{
+                  backgroundColor: "white",
+                  fontWeight: "bold",
+                  padding: "5px 10px 5px 10px",
+                  boxShadow: "none",
+                  borderRadius: "6px",
+                  fontFamily: "fantasy",
+                  color: "black",
+                  textTransform: "none",
+                  marginTop: "14px",
+                }}
+              >
+                Source now
+              </Button>
+            </Grid2>
+          </Grid2>
+        </Grid2>
         {/* /////////////////////////////// 8 grids for items /////////////////////////////////// */}
         {HomeCard.map((item, index) => (
           <Grid2 container key={index}>

@@ -46,6 +46,7 @@ function DealsAndOffers() {
         display={"flex"}
       >
         <Grid2
+          // naw change/////////////////////////// disply
           sm={4}
           lg={4}
           xl={4}

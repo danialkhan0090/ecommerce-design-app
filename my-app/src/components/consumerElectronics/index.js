@@ -9,6 +9,7 @@ import cattle from "../../assets/images/cattle.png";
 import iphone from "../../assets/images/iphone.png";
 import gamingset from "../../assets/images/gamingset.png";
 import tab from "../../assets/images/tab.png";
+import Button from "@mui/material/Button";
 
 export default function ConsumerElectronics() {
   const HomeCard = [
@@ -56,7 +57,7 @@ export default function ConsumerElectronics() {
         display={"flex"}
       >
         <Grid2
-          item
+          display={"flex"}
           xs={12}
           sm={6}
           md={4}
@@ -71,7 +72,46 @@ export default function ConsumerElectronics() {
             borderTopLeftRadius: "6px",
             borderBottomLeftRadius: "6px",
           }}
-        ></Grid2>
+        >
+          <Grid2
+            alignSelf={"flex-start"}
+            style={{
+              marginTop: "14px",
+              marginLeft: "19px",
+            }}
+          >
+            <Grid2 display={"flex"} width={"108px"}>
+              <Typography
+                style={{
+                  textAlign: "left",
+                  fontSize: "18px",
+                  fontWeight: "bold",
+                }}
+              >
+                Consumer Electronics and gadgets
+              </Typography>
+            </Grid2>
+            <Grid2 display={"flex"}>
+              <Button
+                variant="contained"
+                size="small"
+                style={{
+                  backgroundColor: "white",
+                  fontWeight: "bold",
+                  padding: "5px 10px 5px 10px",
+                  boxShadow: "none",
+                  borderRadius: "6px",
+                  fontFamily: "fantasy",
+                  color: "black",
+                  textTransform: "none",
+                  marginTop: "13px",
+                }}
+              >
+                Source now
+              </Button>
+            </Grid2>
+          </Grid2>
+        </Grid2>
         {/* /////////////////////////////// 8 grids for items /////////////////////////////////// */}
         {HomeCard.map((item, index) => (
           <Grid2 container key={index}>
