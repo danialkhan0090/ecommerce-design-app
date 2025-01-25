@@ -73,15 +73,7 @@ function Form() {
             </Box>
           </Box>
         </Grid2>
-        <Grid2
-          xs={6}
-          md={6}
-          lg={6}
-          // justifyItems={"flex-end"}
-          // justifyContent="flex-end"
-          // justifyContentContent={"end"}
-          // justifyContentItems={"end"}
-        >
+        <Grid2 xs={6} md={6} lg={6}>
           <Box
             sm={12}
             sx={{

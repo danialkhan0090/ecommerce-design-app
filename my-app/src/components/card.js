@@ -5,12 +5,12 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Stack } from "@mui/material";
+import { Grid2, Stack } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 export default function Cardian() {
   return (
-    <Box sx={{ minWidth: 300 }}>
+    <Grid2 sx={{ minWidth: 300 }} display={"flex"}>
       <Card
         variant="outlined"
         sx={{
@@ -40,7 +40,6 @@ export default function Cardian() {
               style={{
                 paddingLeft: "80px",
                 paddingRight: "80px",
-                // paddingBottom: "10px",
                 marginBottom: "20px",
 
                 marginLeft: "26px",
@@ -65,6 +64,6 @@ export default function Cardian() {
           </Stack>
         </CardActions>
       </Card>
-    </Box>
+    </Grid2>
   );
 }

@@ -7,7 +7,13 @@ import ExpendMoreIcon from "@mui/icons-material/ExpandMore";
 function SubHeader() {
   return (
     <>
-      <Grid2 container marginLeft={"3px"} marginTop={"10px"} xs={12}>
+      <Grid2
+        container
+        marginLeft={"3px"}
+        marginTop={"10px"}
+        xs={12}
+        display={"flex"}
+      >
         <Grid2
           alignItems={"center"}
           justifyContent={"center"}
