@@ -224,7 +224,6 @@ const header = () => {
         </nav>
       </Grid2>
       <SubHeader />
-      <Banner />
     </>
   );
 };

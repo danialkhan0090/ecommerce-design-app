@@ -4,7 +4,9 @@ import DehazeTwoToneIcon from "@mui/icons-material/DehazeTwoTone";
 import Button from "@mui/material/Button";
 import Ship from "../assets/logo/Ship.png";
 import ExpendMoreIcon from "@mui/icons-material/ExpandMore";
+import { useNavigate } from "react-router-dom";
 function SubHeader() {
+  const navigate = useNavigate();
   return (
     <>
       <Grid2
@@ -27,6 +29,7 @@ function SubHeader() {
             <Button
               variant="text"
               size="small"
+              onClick={() => navigate("/ProductPage")}
               style={{
                 fontSize: "13px",
                 alignItems: "center",
