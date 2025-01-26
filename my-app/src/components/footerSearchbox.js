@@ -37,7 +37,10 @@ function FooterSearchbox() {
             >
               Subscribe to our newsletter
             </Typography>
-            <Typography variant="h8" sx={{ color: dataTheme, lineHeight: 3 }}>
+            <Typography
+              variant="h8"
+              sx={{ textAlign: "center", color: dataTheme, lineHeight: 3 }}
+            >
               Get daily news on upcoming offers from many suppliers all over the
               world
             </Typography>
@@ -49,7 +52,7 @@ function FooterSearchbox() {
               placeholder="Email"
               variant="outlined"
               size="small"
-              sx={{ marginRight: 1 }}
+              sx={{ marginRight: 1, marginLeft: 11 }}
               style={{ backgroundColor: "white" }}
               InputProps={{
                 startAdornment: (

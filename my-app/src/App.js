@@ -7,12 +7,9 @@ import Banner from "./components/banner";
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Header />
-        <Banner />
-        <Section />
-      </ThemeProvider>
+      <CssBaseline />
+      <Banner />
+      <Section />
     </div>
   );
 }

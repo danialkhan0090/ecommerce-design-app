@@ -18,8 +18,8 @@ function Section() {
       <ShirtCard />
       <ServiceCard />
       <Suppliers />
-      <FooterSearchbox />
-      <Footer />
+      {/* <FooterSearchbox /> */}
+      {/* <Footer /> */}
     </>
   );
 }

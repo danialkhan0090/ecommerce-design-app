@@ -11,6 +11,8 @@ import styled from "styled-components";
 import Google from "../assets/logo/market.png";
 import Apple from "../assets/logo/market-button.png";
 import us from "../assets/logo/us.png";
+import FooterSearchbox from "./footerSearchbox";
+
 function Footer() {
   const Stack = styled.div`
     display: flex;
@@ -35,7 +37,8 @@ function Footer() {
   `;
   return (
     <>
-      <Grid2 container sx={{ backgroundColor: "" }}>
+      <FooterSearchbox />
+      <Grid2 container>
         <Stack
           style={{
             marginLeft: "50px",
