@@ -8,9 +8,18 @@ import ProductRight from "./ProductRight";
 function ProductPage() {
   return (
     <>
-      <Grid2 container sx={{ backgroundColor: "#DEE2E7" }} display={"flex"}>
-        <ProductLeft />
-        <ProductRight />
+      <Grid2
+        container
+        sx={{ backgroundColor: "#DEE2E7" }}
+        display={"flex"}
+        direction={"row"}
+      >
+        <Grid2>
+          <ProductLeft />
+        </Grid2>
+        <Grid2>
+          <ProductRight />
+        </Grid2>
       </Grid2>
     </>
   );
