@@ -12,7 +12,7 @@ export default function ProductLeft() {
       container
       display={"flex"}
       margin={"10px 0px 20px 20px"}
-      sx={{ backgroundColor: "#DEE2E7" }}
+      sx={{ backgroundColor: "#FFF9F9" }}
       width={"280px"}
       height={"auto"}
     >
@@ -224,7 +224,7 @@ export default function ProductLeft() {
         <Button
           variant="text"
           size="small"
-          color="primary"
+          color="white"
           sx={{
             textTransform: "none",
             textAlign: "left",
@@ -246,7 +246,7 @@ export default function ProductLeft() {
           size="large"
           style={{
             width: "170px",
-            color: "black",
+
             fontWeight: "bold",
             fontSize: "16px",
             textTransform: "none",
@@ -255,6 +255,25 @@ export default function ProductLeft() {
           Price range
         </Button>
         <DiscreteSlider />
+        <Divider sx={{ width: "220px", marginTop: "20px" }} />
+        <Button
+          sx={{
+            textAlign: "left",
+            justifyContent: "flex-start",
+            paddingLeft: "0px",
+          }}
+          variant="text"
+          size="large"
+          style={{
+            width: "170px",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "16px",
+            textTransform: "none",
+          }}
+        >
+          Condition
+        </Button>
       </Grid2>
     </Grid2>
   );

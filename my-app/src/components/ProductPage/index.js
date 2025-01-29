@@ -10,7 +10,7 @@ function ProductPage() {
     <>
       <Grid2
         container
-        sx={{ backgroundColor: "#DEE2E7" }}
+        sx={{ backgroundColor: "#FFF9F9" }}
         display={"flex"}
         direction={"row"}
       >
