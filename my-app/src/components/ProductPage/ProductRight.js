@@ -7,7 +7,7 @@ import fav from "../../assets/images/fav.png";
 import oppo from "../../assets/images/oppo.png";
 import tab from "../../assets/images/tab2.png";
 import lap from "../../assets/images/lap.png";
-import watch from "../../assets/images/watch.png";
+
 import appleHead from "../../assets/images/appleHead.png";
 const ProductCard = [
   {
@@ -68,8 +68,8 @@ function ProductRight() {
           sx={{
             backgroundColor: "white",
             width: "920px",
-            height: "230px",
-            padding: "20px 0px 0px 0px",
+            height: "auto",
+            padding: "20px 0px 20px 0px",
             margin: "20px 0px 20px 0px",
             borderRadius: "6px",
           }}
@@ -81,7 +81,6 @@ function ProductRight() {
               width: "185px",
               height: "185px",
               alignSelf: "right",
-              marginLeft: "20px",
             }}
           >
             <img

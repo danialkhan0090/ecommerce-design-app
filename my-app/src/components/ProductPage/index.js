@@ -13,6 +13,7 @@ function ProductPage() {
         sx={{ backgroundColor: "#FFF9F9" }}
         display={"flex"}
         direction={"row"}
+        width={"100%"}
       >
         <Grid2>
           <ProductLeft />

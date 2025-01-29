@@ -3,7 +3,7 @@ import { Grid2, Stack, Typography } from "@mui/material";
 import React from "react";
 import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
-import watch from "../../assets/images/watch.png";
+import watch from "../../assets/images/watch2.png";
 import lap from "../../assets/images/lap.png";
 import gopro from "../../assets/images/gopro.png";
 import headset from "../../assets/images/headset.png";
