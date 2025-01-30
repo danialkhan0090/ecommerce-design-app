@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductPage from "./components/ProductPage";
+import ProductPage2 from "./components/productPage2";
 import Layout from "./components/layout";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme/theme";
@@ -18,6 +19,7 @@ root.render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/ProductPage" element={<ProductPage />} />
+            <Route path="/ProductPage2" element={<ProductPage2 />} />
             {/* <Route path="/cart" element={<App />} /> */}
           </Routes>
         </Layout>

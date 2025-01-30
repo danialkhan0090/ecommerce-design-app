@@ -7,7 +7,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import logoSymbol from "../assets/logo/logoSymbol.png";
 import SubHeader from "./sub-header";
-import Banner from "./banner";
+// import Banner from "./banner";
 
 const header = () => {
   const navbarStyle = {
@@ -52,7 +52,7 @@ const header = () => {
   };
   return (
     <>
-      <Grid2 xs={12} md={12} lg={12} sm={12}>
+      <Grid2>
         <nav style={navbarStyle}>
           <Grid2
             size={2}

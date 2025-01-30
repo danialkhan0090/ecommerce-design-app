@@ -1,10 +1,10 @@
 import { Grid2 } from "@mui/material";
 import React from "react";
-import ProductLeft from "./ProductLeft";
-import ProductRight from "./ProductRight";
-import ProductTopBar from "./ProductTopBar";
+import ProductTopBar from "../../components/ProductPage/ProductTopBar";
 import BasicBreadcrumbs from "../breadCrumbs";
-function ProductPage() {
+import ProductRightside from "./ProductRightSide";
+import ProductLeftSide from "./ProductLeftside";
+function ProductPage2() {
   return (
     <>
       <Grid2
@@ -18,15 +18,15 @@ function ProductPage() {
           <BasicBreadcrumbs />
         </Grid2>
         <Grid2>
-          <ProductLeft />
+          <ProductLeftSide />
         </Grid2>
         <Grid2>
           <ProductTopBar />
-          <ProductRight />
+          <ProductRightside />
         </Grid2>
       </Grid2>
     </>
   );
 }
 
-export default ProductPage;
+export default ProductPage2;

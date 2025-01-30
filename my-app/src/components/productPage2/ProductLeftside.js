@@ -1,13 +1,10 @@
 import * as React from "react";
-import { Button, Grid2, Stack } from "@mui/material";
+import { Button, Grid2 } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import DiscreteSlider from "./slider";
-import RadioButtons from "./RadioButtons";
-import RatingCheckBox from "./RatingCheckBox";
 
-export default function ProductLeft() {
+export default function ProductLeftSide() {
   return (
     <>
       <Grid2
@@ -240,41 +237,82 @@ export default function ProductLeft() {
           </Button>
 
           <Divider sx={{ width: "260px" }} />
-
-          <Button
-            sx={{
-              textAlign: "left",
-              justifyContent: "flex-start",
-              paddingLeft: "0px",
-            }}
-            variant="text"
-            size="large"
-            style={{
-              width: "170px",
-              color: "black",
-              fontWeight: "bold",
-              fontSize: "16px",
-              textTransform: "none",
-            }}
-          >
-            Price range
-          </Button>
-          <DiscreteSlider />
         </Grid2>
-
-        <Divider
-          sx={{ width: "260px", marginTop: "20px", marginBottom: "10px" }}
-        />
-        <RadioButtons />
-        <Divider
-          sx={{ width: "260px", marginTop: "20px", marginBottom: "10px" }}
-        />
-        <Stack>
-          <RatingCheckBox />
-          <RatingCheckBox />
-          <RatingCheckBox />
-          <RatingCheckBox />
-        </Stack>
+        <Button
+          sx={{
+            textAlign: "left",
+            justifyContent: "flex-start",
+            paddingLeft: "0px",
+          }}
+          variant="text"
+          size="large"
+          style={{
+            width: "170px",
+            color: "#1C1C1C",
+            fontWeight: "bold",
+            fontSize: "14px",
+            textTransform: "none",
+          }}
+        >
+          Price range
+        </Button>
+        <Divider sx={{ width: "260px" }} />
+        <Button
+          sx={{
+            textAlign: "left",
+            justifyContent: "flex-start",
+            paddingLeft: "0px",
+          }}
+          variant="text"
+          size="large"
+          style={{
+            width: "170px",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "14px",
+            textTransform: "none",
+          }}
+        >
+          Condition
+        </Button>
+        <Divider sx={{ width: "260px" }} />
+        <Button
+          sx={{
+            textAlign: "left",
+            justifyContent: "flex-start",
+            paddingLeft: "0px",
+          }}
+          variant="text"
+          size="large"
+          style={{
+            width: "170px",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "14px",
+            textTransform: "none",
+          }}
+        >
+          Range
+        </Button>
+        <Divider sx={{ width: "260px" }} />
+        <Button
+          sx={{
+            textAlign: "left",
+            justifyContent: "flex-start",
+            paddingLeft: "0px",
+          }}
+          variant="text"
+          size="large"
+          style={{
+            width: "170px",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "14px",
+            textTransform: "none",
+          }}
+        >
+          Manufacturer
+        </Button>
       </Grid2>
     </>
   );

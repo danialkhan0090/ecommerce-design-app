@@ -1,4 +1,4 @@
-import { Grid, Grid2 } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import React from "react";
 import DehazeTwoToneIcon from "@mui/icons-material/DehazeTwoTone";
 import Button from "@mui/material/Button";
@@ -47,6 +47,7 @@ function SubHeader() {
           <Button
             variant="text"
             size="small"
+            onClick={() => navigate("/ProductPage2")}
             style={{
               fontSize: "13px",
               alignItems: "center",
