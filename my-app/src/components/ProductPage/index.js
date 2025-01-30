@@ -3,8 +3,7 @@ import { Grid2, Typography } from "@mui/material";
 import React from "react";
 import ProductLeft from "./ProductLeft";
 import ProductRight from "./ProductRight";
-// import Header from "../header";
-
+import ProductTopBar from "./ProductTopBar";
 function ProductPage() {
   return (
     <>
@@ -19,6 +18,7 @@ function ProductPage() {
           <ProductLeft />
         </Grid2>
         <Grid2>
+          <ProductTopBar />
           <ProductRight />
         </Grid2>
       </Grid2>

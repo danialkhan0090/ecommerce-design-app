@@ -66,11 +66,11 @@ function ProductRight() {
           alignSelf={"right"}
           container
           sx={{
-            backgroundColor: "white",
+            backgroundColor: "#FFFFFF",
             width: "920px",
             height: "auto",
             padding: "20px 0px 20px 0px",
-            margin: "20px 0px 20px 0px",
+            margin: "10px 0px 20px 0px",
             borderRadius: "6px",
           }}
         >
