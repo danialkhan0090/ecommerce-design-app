@@ -14,7 +14,7 @@ export default function ProductLeft() {
       <Grid2
         container
         margin={"10px 0px 20px 20px"}
-        sx={{ backgroundColor: "#FFF9F9" }}
+        sx={{ backgroundColor: "#F4F4F4" }}
         width={"280px"}
         height={"auto"}
       >

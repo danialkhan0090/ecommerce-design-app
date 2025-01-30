@@ -70,7 +70,7 @@ function ProductRight() {
             width: "920px",
             height: "auto",
             padding: "20px 0px 20px 0px",
-            margin: "10px 0px 20px 0px",
+            margin: "10px 0px 15px 0px",
             borderRadius: "6px",
           }}
         >

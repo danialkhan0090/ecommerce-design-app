@@ -20,7 +20,8 @@ function ProductTopBar() {
         width={"auto"}
         justifyContent={"space-between"}
         mt={"10px"}
-        padding={"5px"}
+        mb={"20px"}
+        padding={"8px 15px 3px 15px"}
         sx={{ backgroundColor: "white", borderRadius: "5px" }}
       >
         <Grid2 mt={"10px"}>
