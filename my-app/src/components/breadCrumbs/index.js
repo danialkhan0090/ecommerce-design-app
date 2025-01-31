@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import ProductPage2 from "../productPage2";
 import ProductPage from "../ProductPage";
+import Cart from "../cart";
 
 export default function BasicBreadcrumbs() {
   const navigate = useNavigate();
@@ -40,6 +41,17 @@ export default function BasicBreadcrumbs() {
     >
       All items
     </Link>,
+    <Link
+      underline="hover"
+      key="4"
+      color="inherit"
+      onClick={() => navigate("/Cart")}
+      fontSize={"14px"}
+      style={{ cursor: "pointer" }}
+    >
+      Cart
+    </Link>,
+
     <Typography fontSize={"15px"} key="4" sx={{ color: "text.primary" }}>
       Summer Clothings
     </Typography>,

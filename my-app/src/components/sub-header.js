@@ -47,7 +47,7 @@ function SubHeader() {
           <Button
             variant="text"
             size="small"
-            onClick={() => navigate("/ProductPage2")}
+            // onClick={() => navigate("/ProductPage2")}
             style={{
               fontSize: "13px",
               alignItems: "center",
