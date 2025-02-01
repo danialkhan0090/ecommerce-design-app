@@ -9,7 +9,7 @@ import ProductPage2 from "./components/productPage2";
 import Layout from "./components/layout";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme/theme";
-import Cart from "./components/cart/index";
+import Cart from "./components/cart";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -20,6 +20,7 @@ root.render(
             <Route path="/" element={<App />} />
             <Route path="/ProductPage" element={<ProductPage />} />
             <Route path="/ProductPage2" element={<ProductPage2 />} />
+            <Route path="/Cart" element={<Cart />} />
           </Routes>
         </Layout>
       </Router>

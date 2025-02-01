@@ -43,16 +43,13 @@ const header = () => {
   const buttonStyle = {
     padding: "2px",
     border: "3px solid #0D6EFD",
-    // borderLeft: "none",
-    // borderTopRightRadius: "5px",
-    // borderBottomRightRadius: "5px",
     backgroundColor: "#0D6EFD",
     color: "white",
     textTransform: "none",
   };
   return (
     <>
-      <Grid2>
+      <Grid2 marginLeft={"18px"}>
         <nav style={navbarStyle}>
           <Grid2
             size={2}
