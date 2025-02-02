@@ -15,14 +15,16 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Router>
-        <Layout>
-          <Routes>
+        {/* <Layout> */}
+        <Routes>
+          <Route element={<Layout />}>
             <Route path="/" element={<App />} />
             <Route path="/ProductPage" element={<ProductPage />} />
             <Route path="/ProductPage2" element={<ProductPage2 />} />
-            <Route path="/Cart" element={<Cart />} />
-          </Routes>
-        </Layout>
+          </Route>
+          <Route path="/Cart" element={<Cart />} />
+        </Routes>
+        {/* </Layout> */}
       </Router>
     </ThemeProvider>
   </React.StrictMode>

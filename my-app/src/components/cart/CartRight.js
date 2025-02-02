@@ -1,4 +1,4 @@
-import { Button, Grid2, Stack, TextField } from "@mui/material";
+import { Button, Grid2, Stack, TextField, Typography } from "@mui/material";
 import React from "react";
 
 function CartRight() {
@@ -8,10 +8,15 @@ function CartRight() {
         container
         sx={{ backgroundColor: "white" }}
         width={"280px"}
-        height={"110px"}
+        height={"90px"}
         display={"flex"}
         justifySelf={"right"}
+        padding={"20px"}
+        mr={"20px"}
       >
+        <Grid2 sx={{ height: "30px" }}>
+          <Typography>Have a Coupon</Typography>
+        </Grid2>
         <Stack direction={"row"}>
           <form>
             <TextField
@@ -40,7 +45,14 @@ function CartRight() {
           </form>
         </Stack>
       </Grid2>
-      <Grid2 container sx={{ backgroundColor: "white" }}></Grid2>
+      <Grid2
+        container
+        sx={{ backgroundColor: "black" }}
+        width={"280px"}
+        height={"302px"}
+      >
+        {" "}
+      </Grid2>
     </>
   );
 }
