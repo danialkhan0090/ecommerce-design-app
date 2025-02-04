@@ -3,6 +3,7 @@ import React from "react";
 import CartRight from "./CartRight";
 import CartHeader from "./CartHeader";
 import CartFooter from "./CartFooter";
+import CartItems from "./CartItems";
 function Cart() {
   return (
     <>
@@ -21,14 +22,18 @@ function Cart() {
         sx={{ backgroundColor: "#F4F4F4" }}
       >
         <Grid2
-          sx={{ backgroundColor: "red" }}
+          // sx={{ backgroundColor: "red" }}
           maxWidth={"880px"}
           maxHeight={"552px"}
-        ></Grid2>
+          padding={"0px 0px 0px 20px"}
+          mt={"15px"}
+          mb={"10px"}
+          height={"auto"}
+        >
+          <CartItems />
+        </Grid2>
         <Grid2 mt={"15px"} mb={"10px"} ml={"20px"} height={"auto"}>
           <CartRight />
-
-          {/* <Grid2 mt={"15px"} mb={"10px"} ml={"20px"}></Grid2> */}
         </Grid2>
       </Grid2>
       <CartFooter />
