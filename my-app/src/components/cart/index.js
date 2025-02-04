@@ -4,6 +4,7 @@ import CartRight from "./CartRight";
 import CartHeader from "./CartHeader";
 import CartFooter from "./CartFooter";
 import CartItems from "./CartItems";
+import Bottompage from "./Bottompage";
 function Cart() {
   return (
     <>
@@ -41,6 +42,19 @@ function Cart() {
           <CartRight />
         </Grid2>
       </Grid2>
+      <Grid2
+        sx={{
+          pl: "40px",
+          pt: "10px",
+          pb: "10px",
+          pr: "40px",
+          borderBottomRightRadius: "10px",
+          backgroundColor: "#F4F4F4",
+        }}
+      >
+        <Bottompage />
+      </Grid2>
+
       <CartFooter />
     </>
   );

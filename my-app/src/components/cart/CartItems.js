@@ -4,8 +4,10 @@ import shirt from "../../assets/images/blueshirt.png";
 import bag from "../../assets/images/bluebag.png";
 import bluelamp from "../../assets/images/bluelamp.png";
 import backimage from "../../assets/images/backimage.png";
+import { useNavigate } from "react-router-dom";
 
 function CartItems() {
+  const navigate = useNavigate();
   const cardForItems = [
     {
       image: shirt,
@@ -165,6 +167,7 @@ function CartItems() {
           <Button
             variant="contained"
             size="small"
+            onClick={() => navigate("/ProductPage")}
             sx={{
               textTransform: "none",
               color: "ffffff",
@@ -200,14 +203,6 @@ function CartItems() {
             Remove all
           </Button>
         </Grid2>
-      </Grid2>
-      <Grid2>
-        {" "}
-        <Grid2
-          height={"120px"}
-          width={"1180px"}
-          sx={{ backgroundImage: `url(${backimage})` }}
-        ></Grid2>
       </Grid2>
     </>
   );
