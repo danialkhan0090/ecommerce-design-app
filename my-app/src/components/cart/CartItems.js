@@ -1,8 +1,9 @@
-import { Button, Divider, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid2, Stack, Typography } from "@mui/material";
 import React from "react";
 import shirt from "../../assets/images/blueshirt.png";
 import bag from "../../assets/images/bluebag.png";
 import bluelamp from "../../assets/images/bluelamp.png";
+import backimage from "../../assets/images/backimage.png";
 
 function CartItems() {
   const cardForItems = [
@@ -35,11 +36,11 @@ function CartItems() {
           container
           sx={{ backgroundColor: "white" }}
           width={"880px"}
-          height={"136px"}
-          marginLeft={"20px"}
+          height={"150px"}
+          // marginLeft={"20px"}
           justifyContent={"space-between"}
           display={"flex"}
-          padding={"20px"}
+          padding={"20px "}
           borderRadius={"5px"}
         >
           <Grid2
@@ -84,7 +85,8 @@ function CartItems() {
                   sx={{
                     textTransform: "none",
                     color: "red",
-                    backgroundColor: "#DEE2E7",
+                    backgroundColor: "white",
+                    border: "2px solid #EEF2FF",
                     borderRadius: "5px",
                     width: "70px",
                     height: "30px",
@@ -100,9 +102,10 @@ function CartItems() {
                   sx={{
                     textTransform: "none",
                     color: "#007AFF",
-                    backgroundColor: "#DEE2E7",
+                    backgroundColor: "white",
                     borderRadius: "5px",
-                    width: "103px",
+                    border: "2px solid #EEF2FF",
+                    width: "105px",
                     ml: "8px",
                     height: "30px",
                     boxShadow: "none",
@@ -119,10 +122,93 @@ function CartItems() {
             width={"100px"}
             height={"100px"}
             // sx={{ backgroundColor: "black" }}
-          ></Grid2>
-          <Divider sx={{ marginBottom: "20px", mt: "20px", width: "830px" }} />
+          >
+            <Box ml={"50px"}>{item?.price}</Box>
+            <Box mt={"10px"}>
+              <select
+                style={{
+                  width: "100px",
+                  height: "30px",
+                  color: "#1C1C1C",
+                  backgroundColor: "white",
+                  border: "1px solid #DEE2E7",
+                  borderRadius: "5px",
+
+                  fontWeight: "normal",
+                }}
+              >
+                <option style={{}}>Qty:1</option>
+                <option>Qty:2</option>
+                <option> Qty:3</option>
+                <option> Qty:4</option>
+                <option> Qty:5</option>
+              </select>
+            </Box>
+          </Grid2>
+          <Divider sx={{ marginBottom: "20px", mt: "30px", width: "840px" }} />
         </Grid2>
       ))}
+      <Grid2
+        width={"880px"}
+        height={"auto"}
+        padding={"20px"}
+        display={"flex"}
+        sx={{
+          backgroundColor: "white",
+          justifyContent: "space-between",
+          borderBottomLeftRadius: "5px",
+          borderBottomRightRadius: "5px",
+        }}
+        // direction={"column"}
+      >
+        <Grid2 sx={{}}>
+          <Button
+            variant="contained"
+            size="small"
+            sx={{
+              textTransform: "none",
+              color: "ffffff",
+              backgroundColor: "navyblue",
+              borderRadius: "5px",
+              width: "120px",
+              ml: "8px",
+              height: "30px",
+              boxShadow: "none",
+              mt: "10px",
+            }}
+          >
+            Back to shop
+          </Button>
+        </Grid2>
+        <Grid2>
+          <Button
+            variant="contained"
+            size="small"
+            sx={{
+              textTransform: "none",
+              backgroundColor: "white",
+              color: "#007AFF",
+              border: "1px solid #DEE2E7",
+
+              // width: "120px",
+              ml: "8px",
+              height: "30px",
+              boxShadow: "none",
+              mt: "10px",
+            }}
+          >
+            Remove all
+          </Button>
+        </Grid2>
+      </Grid2>
+      <Grid2>
+        {" "}
+        <Grid2
+          height={"120px"}
+          width={"1180px"}
+          sx={{ backgroundImage: `url(${backimage})` }}
+        ></Grid2>
+      </Grid2>
     </>
   );
 }
