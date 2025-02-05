@@ -36,15 +36,15 @@ function CartFooter() {
   `;
   return (
     <>
-      <Grid2 container>
+      <Grid2 container width={"1280px"} display={"flex"}>
         <Stack
           style={{
-            marginLeft: "50px",
             paddingTop: "30px",
-            paddingRight: "25px",
+            // paddingRight: "25px",
+            paddingLeft: "33px",
           }}
         >
-          <Grid>
+          <Grid container style={{ padding: "30px" }}>
             <GridItem>
               <Stack
                 direction="column"
@@ -69,7 +69,13 @@ function CartFooter() {
                   Brands
                 </Typography>
               </Stack>
-              <Typography style={{ fontSize: "12px", paddingTop: "13px" }}>
+              <Typography
+                style={{
+                  display: "flex",
+                  fontSize: "12px",
+                  paddingTop: "13px",
+                }}
+              >
                 Best information about the company <br /> is here to help you
                 you can inspect
               </Typography>

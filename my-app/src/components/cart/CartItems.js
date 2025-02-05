@@ -4,6 +4,10 @@ import shirt from "../../assets/images/blueshirt.png";
 import bag from "../../assets/images/bluebag.png";
 import bluelamp from "../../assets/images/bluelamp.png";
 import backimage from "../../assets/images/backimage.png";
+import custumerSuport from "../../assets/images/custumerSuport.png";
+import securePayment from "../../assets/images/securePayment.png";
+import Freedelivery from "../../assets/images/Freedelivery.png";
+
 import { useNavigate } from "react-router-dom";
 
 function CartItems() {
@@ -33,7 +37,7 @@ function CartItems() {
   ];
   return (
     <>
-      {cardForItems.map((item) => (
+      {cardForItems.map((item, index) => (
         <Grid2
           container
           sx={{ backgroundColor: "white" }}
@@ -107,7 +111,7 @@ function CartItems() {
                     backgroundColor: "white",
                     borderRadius: "5px",
                     border: "2px solid #EEF2FF",
-                    width: "105px",
+                    width: "110px",
                     ml: "8px",
                     height: "30px",
                     boxShadow: "none",
@@ -193,7 +197,6 @@ function CartItems() {
               color: "#007AFF",
               border: "1px solid #DEE2E7",
 
-              // width: "120px",
               ml: "8px",
               height: "30px",
               boxShadow: "none",
@@ -201,6 +204,35 @@ function CartItems() {
             }}
           >
             Remove all
+          </Button>
+        </Grid2>
+      </Grid2>
+      <Grid2 display={"flex"} justifyContent={"space-between"} mt={"20px"}>
+        <Grid2>
+          <Button>
+            {" "}
+            <img
+              src={require("../../assets/images/securePayment.png")}
+              alt="product"
+            />
+          </Button>
+        </Grid2>
+        <Grid2>
+          <Button>
+            {" "}
+            <img
+              src={require("../../assets/images/custumerSuport.png")}
+              alt="product"
+            />
+          </Button>
+        </Grid2>
+        <Grid2>
+          <Button>
+            {" "}
+            <img
+              src={require("../../assets/images/Freedelivery.png")}
+              alt="product"
+            />
           </Button>
         </Grid2>
       </Grid2>

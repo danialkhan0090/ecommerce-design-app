@@ -5,6 +5,7 @@ import CartHeader from "./CartHeader";
 import CartFooter from "./CartFooter";
 import CartItems from "./CartItems";
 import Bottompage from "./Bottompage";
+import SavedForLater from "./SavedForLater";
 function Cart() {
   return (
     <>
@@ -42,6 +43,9 @@ function Cart() {
           <CartRight />
         </Grid2>
       </Grid2>
+      {/* <Grid2 sx={{ backgroundColor: "#F4F4F4" }}>
+        <SavedForLater />
+      </Grid2> */}
       <Grid2
         sx={{
           pl: "40px",
@@ -52,10 +56,12 @@ function Cart() {
           backgroundColor: "#F4F4F4",
         }}
       >
+        <SavedForLater />
         <Bottompage />
       </Grid2>
-
-      <CartFooter />
+      <Grid2 sx={{ backgroundColor: "#F4F4F4", pr: "190px" }}>
+        <CartFooter />
+      </Grid2>
     </>
   );
 }
