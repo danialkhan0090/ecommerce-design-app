@@ -6,6 +6,7 @@ import CartFooter from "./CartFooter";
 import CartItems from "./CartItems";
 import Bottompage from "./Bottompage";
 import SavedForLater from "./SavedForLater";
+import DynamicCart from "./DynamicCart";
 function Cart() {
   return (
     <>
@@ -61,6 +62,10 @@ function Cart() {
       </Grid2>
       <Grid2 sx={{ backgroundColor: "#F4F4F4", pr: "190px" }}>
         <CartFooter />
+      </Grid2>
+      <Grid2>
+        {" "}
+        <DynamicCart />
       </Grid2>
     </>
   );
