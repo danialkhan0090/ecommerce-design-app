@@ -51,6 +51,7 @@ function CartItems({ items, updateQuantity, removeItem, onSaveForLater }) {
                   onClick={() => removeItem(item.id)}
                   sx={{
                     textTransform: "none",
+
                     color: "red",
                     backgroundColor: "white",
                     border: "2px solid #EEF2FF",
@@ -69,13 +70,14 @@ function CartItems({ items, updateQuantity, removeItem, onSaveForLater }) {
                   onClick={() => handleSaveForLater(item.id)}
                   sx={{
                     textTransform: "none",
-                    marginLeft: "10px",
-                    borderColor: "#0D6EFD",
-                    color: "#0D6EFD",
-                    "&:hover": {
-                      borderColor: "#0b5ed7",
-                      backgroundColor: "rgba(13, 110, 253, 0.04)",
-                    },
+                    backgroundColor: "white",
+                    border: "2px solid #EEF2FF",
+                    borderRadius: "5px",
+                    width: "110px",
+                    height: "30px",
+                    boxShadow: "none",
+                    mt: "10px",
+                    ml: "10px",
                   }}
                 >
                   Save for Later

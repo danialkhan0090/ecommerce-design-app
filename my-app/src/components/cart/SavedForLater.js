@@ -4,25 +4,25 @@ import React, { useState } from "react";
 const INITIAL_PRODUCTS = [
   {
     id: 1,
-    image: "tab2",
+    image: "tabCart",
     name: "Tablet android, Dual-sim",
     price: 99.5,
   },
   {
     id: 2,
-    image: "bluebag",
+    image: "iphone12Cart",
     name: "Apple phone 12 pro",
     price: 1500.0,
   },
   {
     id: 3,
-    image: "bluelamp",
+    image: "watchCart",
     name: "Laptop core i9 16gb 500gb",
     price: 968.0,
   },
   {
     id: 4,
-    image: "watchCart",
+    image: "lapCart",
     name: "Smart Watch Series 7",
     price: 119.0,
   },

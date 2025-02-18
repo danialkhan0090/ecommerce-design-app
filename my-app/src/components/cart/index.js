@@ -6,7 +6,7 @@ import CartFooter from "./CartFooter";
 import CartItems from "./CartItems";
 import Bottompage from "./Bottompage";
 import SavedForLater from "./SavedForLater";
-import DynamicCart from "./DynamicCart";
+// import DynamicCart from "./DynamicCart";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);

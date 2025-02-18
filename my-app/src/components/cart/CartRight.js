@@ -122,7 +122,14 @@ const CartRight = ({ cartTotal, itemCount }) => {
             </span>
           </Typography>
         </Grid2>
-        <Divider sx={{ marginBottom: "30px", width: "250px", ml: "20px" }} />
+        <Divider
+          sx={{
+            marginTop: "20px",
+            marginBottom: "30px",
+            width: "250px",
+            ml: "20px",
+          }}
+        />
         <Grid2 marginLeft={"20px"} display={"flex"}>
           <Typography fontWeight={"bold"}>
             Total:{" "}
