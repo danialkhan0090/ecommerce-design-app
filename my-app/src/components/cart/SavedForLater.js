@@ -1,39 +1,58 @@
-import { Button, Grid2, Stack, Typography } from "@mui/material";
+import { Button, Grid2, Typography } from "@mui/material";
 import React, { useState } from "react";
-import Rating from "@mui/material/Rating";
-import fav from "../../assets/images/fav.png";
-import Divider from "@mui/material/Divider";
-import tabCart from "../../assets/images/tabCart.png";
-import iphone12Cart from "../../assets/images/iphone12Cart.png";
-import lapCart from "../../assets/images/lapCart.png";
-import watchCart from "../../assets/images/watchCart.png";
-import cartButton from "../../assets/images/cartButton.png";
-const ProductCard = [
-  {
-    image: "tabCart",
-    originalPrice: "$99.50",
-    Typography: "Tablet android, Dual-sim",
-  },
-  {
-    image: "iphone12Cart",
-    Typography: "Apple phone 12 pro",
-    originalPrice: "$1500.00",
-  },
-  {
-    image: "lapCart",
-    Typography: "Laptop core i9 16gb 500gb",
-    originalPrice: "$968.00",
-  },
 
+const INITIAL_PRODUCTS = [
   {
+    id: 1,
+    image: "shirt2",
+    name: "Tablet android, Dual-sim",
+    price: 99.5,
+  },
+  {
+    id: 2,
+    image: "bluebag",
+    name: "Apple phone 12 pro",
+    price: 1500.0,
+  },
+  {
+    id: 3,
+    image: "bluelamp",
+    name: "Laptop core i9 16gb 500gb",
+    price: 968.0,
+  },
+  {
+    id: 4,
     image: "watchCart",
-    Typography: "Laptop core i9 16gb 500gb",
-    originalPrice: "$119.00",
+    name: "Smart Watch Series 7",
+    price: 119.0,
   },
 ];
 
-function SavedForLater() {
-  const [value, setValue] = useState(2);
+function SavedForLater({ onAddToCart, onReceiveItem }) {
+  const [savedItems, setSavedItems] = useState(INITIAL_PRODUCTS);
+
+  const handleAddToCart = (product) => {
+    setSavedItems((prevItems) =>
+      prevItems.filter((item) => item.id !== product.id)
+    );
+    onAddToCart(product);
+  };
+
+  const addToSavedItems = (item) => {
+    // Check if item already exists in saved items
+    setSavedItems((prevItems) => {
+      const exists = prevItems.some((savedItem) => savedItem.id === item.id);
+      if (!exists) {
+        return [...prevItems, item];
+      }
+      return prevItems;
+    });
+  };
+
+  // Function to handle receiving items from cart
+  const handleReceiveItem = (item) => {
+    addToSavedItems(item);
+  };
 
   return (
     <>
@@ -46,7 +65,7 @@ function SavedForLater() {
         borderRadius={"5px"}
       >
         <Typography fontSize={14} fontWeight={"bold"}>
-          Saved for later
+          Saved for later ({savedItems.length} items)
         </Typography>
       </Grid2>
       <Grid2
@@ -56,9 +75,9 @@ function SavedForLater() {
         width={"1240px"}
         sx={{ backgroundColor: "white", justifyContent: "center" }}
       >
-        {ProductCard.map((item, index) => (
+        {savedItems.map((item) => (
           <Grid2
-            key={index}
+            key={item.id}
             height={"382"}
             display={"flex"}
             width={"270px"}
@@ -81,7 +100,7 @@ function SavedForLater() {
               >
                 <img
                   src={require(`../../assets/images/${item.image}.png`)}
-                  alt="product"
+                  alt={item.name}
                   style={{ width: "275px", height: "250px" }}
                 />
               </Grid2>
@@ -98,18 +117,27 @@ function SavedForLater() {
                   fontWeight={"bold"}
                   sx={{ marginRight: "8px" }}
                 >
-                  {item.originalPrice}
+                  ${item.price.toFixed(2)}
                 </Typography>
               </Grid2>
               <Grid2 mt={"3px"}>
                 <Typography variant="body2" color="#8B96A5" gutterBottom>
-                  {item.Typography}
+                  {item.name}
                 </Typography>
-                <Button size="small">
-                  <img
-                    src={require("../../assets/images/cartButton.png")}
-                    style={{ width: "100px" }}
-                  />
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="small"
+                  onClick={() => handleAddToCart(item)}
+                  sx={{
+                    textTransform: "none",
+                    backgroundColor: "#0D6EFD",
+                    "&:hover": {
+                      backgroundColor: "#0b5ed7",
+                    },
+                  }}
+                >
+                  Move to Cart
                 </Button>
               </Grid2>
             </Grid2>
