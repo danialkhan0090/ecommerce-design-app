@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const INITIAL_PRODUCTS = [
   {
     id: 1,
-    image: "shirt2",
+    image: "tab2",
     name: "Tablet android, Dual-sim",
     price: 99.5,
   },
@@ -32,18 +32,27 @@ function SavedForLater({ onAddToCart, onReceiveItem }) {
   const [savedItems, setSavedItems] = useState(INITIAL_PRODUCTS);
 
   const handleAddToCart = (product) => {
+    // Remove from saved items first
     setSavedItems((prevItems) =>
       prevItems.filter((item) => item.id !== product.id)
     );
-    onAddToCart(product);
+
+    // Add to cart with quantity
+    const itemToCart = {
+      ...product,
+      quantity: 1, // Initialize with quantity 1 when moving to cart
+    };
+    onAddToCart(itemToCart);
   };
 
   const addToSavedItems = (item) => {
-    // Check if item already exists in saved items
+    // Remove quantity property when saving item
+    const { quantity, ...itemWithoutQuantity } = item;
+
     setSavedItems((prevItems) => {
       const exists = prevItems.some((savedItem) => savedItem.id === item.id);
       if (!exists) {
-        return [...prevItems, item];
+        return [...prevItems, itemWithoutQuantity];
       }
       return prevItems;
     });

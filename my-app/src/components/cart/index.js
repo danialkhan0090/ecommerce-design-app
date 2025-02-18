@@ -69,6 +69,20 @@ const Cart = () => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
   };
 
+  const moveToSavedForLater = (itemId) => {
+    // Find the item in cart
+    const itemToMove = cartItems.find((item) => item.id === itemId);
+
+    if (!itemToMove) return null;
+
+    // Remove from cart
+    setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
+
+    // Return the item without quantity for saved items
+    const { quantity, ...itemWithoutQuantity } = itemToMove;
+    return itemWithoutQuantity;
+  };
+
   const addToCart = (product) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find((item) => item.id === product.id);
@@ -81,24 +95,13 @@ const Cart = () => {
         );
       }
 
-      return [...prevItems, { ...product, quantity: 1 }];
+      // Make sure quantity is included when adding to cart
+      return [...prevItems, { ...product, quantity: product.quantity || 1 }];
     });
   };
 
-  const moveToSavedForLater = (itemId) => {
-    // Find the item in cart
-    const itemToMove = cartItems.find((item) => item.id === itemId);
-
-    // Remove from cart
-    setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
-
-    // Return the item to be saved (without quantity)
-    return {
-      id: itemToMove.id,
-      image: itemToMove.image,
-      name: itemToMove.name,
-      price: itemToMove.price,
-    };
+  const handleReceiveItem = (item) => {
+    // Implementation of handleReceiveItem function
   };
 
   return (
@@ -157,7 +160,7 @@ const Cart = () => {
       >
         <SavedForLater
           onAddToCart={addToCart}
-          onReceiveItem={moveToSavedForLater}
+          onReceiveItem={handleReceiveItem}
         />
         <Bottompage />
       </Grid2>
