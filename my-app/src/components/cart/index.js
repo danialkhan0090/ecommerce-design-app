@@ -125,9 +125,7 @@ const Cart = () => {
         sx={{ backgroundColor: "#F4F4F4" }}
       >
         <Grid2
-          // sx={{ backgroundColor: "red" }}
           maxWidth={"880px"}
-          // maxHeight={"552px"}
           padding={"0px 0px 0px 0px"}
           mt={"15px"}
           mb={"10px"}
@@ -141,7 +139,14 @@ const Cart = () => {
             onSaveForLater={moveToSavedForLater}
           />
         </Grid2>
-        <Grid2 mt={"15px"} mb={"10px"} ml={"0px"} height={"528px"} mr={"40px"}>
+        <Grid2
+          mt={"15px"}
+          mb={"10px"}
+          sx={{
+            flexShrink: 0,
+            width: "300px",
+          }}
+        >
           <CartRight cartTotal={cartTotal} itemCount={cartItems.length} />
         </Grid2>
       </Grid2>
