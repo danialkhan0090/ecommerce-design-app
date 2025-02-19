@@ -139,17 +139,20 @@ function DealsAndOffers() {
               borderRight: "1px solid #DEE2E7",
               borderTop: "1px solid #DEE2E7",
               borderBottom: "1px solid #DEE2E7",
-
+              justifyContent: "center",
+              alignItems: "center",
               width: 205,
               height: 235,
               margin: "10px 0px 15px 0px",
+              padding: "10px 0px 10px 30px",
             }}
           >
             <img src={item.image} alt={item.name} />
-            <Typography>{item.name}</Typography>
+            <Typography pl={5}>{item.name}</Typography>
             <Chip
               style={{ marginBottom: "20px" }}
               sx={{
+                ml: 5,
                 height: "28px",
                 width: "61px",
                 color: "red",
