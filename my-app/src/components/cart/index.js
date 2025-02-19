@@ -1,7 +1,6 @@
 import { Grid2, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import CartRight from "./CartRight";
-import CartHeader from "./CartHeader";
 import CartFooter from "./CartFooter";
 import CartItems from "./CartItems";
 import Bottompage from "./Bottompage";
@@ -106,7 +105,6 @@ const Cart = () => {
 
   return (
     <>
-      <CartHeader />
       <Grid2
         padding={"0px 30px 0px 20px"}
         sx={{ backgroundColor: "#F4F4F4" }}

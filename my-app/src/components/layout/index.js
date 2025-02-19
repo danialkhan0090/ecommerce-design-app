@@ -1,18 +1,22 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../header";
-import Footer from "../footer";
+import Banner from "../banner";
+
 const Layout = () => {
+  const location = useLocation();
+  const isLoginPage = location.pathname === "/login";
+
   return (
-    <div>
-      <Header />
-      <div>
-        <Outlet />
-      </div>
-      <Footer />
-    </div>
+    <>
+      {!isLoginPage && <Header />}
+      {/* Banner only shows on home page */}
+      {location.pathname === "/" && <Banner />}
+      <Outlet />
+    </>
   );
 };
+
 export default Layout;
 
 // const Layout = ({ children }) => {
