@@ -236,15 +236,6 @@ const Login = () => {
             >
               Sign Up
             </Button>
-
-            <Button
-              fullWidth
-              variant="text"
-              onClick={() => navigate("/login")}
-              sx={{ textTransform: "none" }}
-            >
-              Already have an account? Sign in
-            </Button>
           </Stack>
         </Box>
       </Paper>
