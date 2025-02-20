@@ -7,9 +7,10 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import logoSymbol from "../assets/logo/logoSymbol.png";
 import SubHeader from "./sub-header";
-// import Banner from "./banner";
+import { useNavigate } from "react-router-dom";
 
-const header = () => {
+const Header = () => {
+  const navigate = useNavigate();
   const navbarStyle = {
     backgroundColor: "white",
     padding: "5px 0px 5px 0px",
@@ -47,6 +48,7 @@ const header = () => {
     color: "white",
     textTransform: "none",
   };
+
   return (
     <>
       <Grid2 marginLeft={"18px"}>
@@ -92,7 +94,7 @@ const header = () => {
                 marginBottom: "0px",
               }}
             >
-              search
+              Search
             </Button>
             {/* ====================================icons======================================== */}
             <Grid2
@@ -203,6 +205,7 @@ const header = () => {
                   />
                   <Button
                     variant="text"
+                    onClick={() => navigate("/cart")}
                     size="small"
                     style={{
                       color: "#8B96A5",
@@ -212,7 +215,7 @@ const header = () => {
                       fontStyle: "fantasy",
                     }}
                   >
-                    My cart
+                    My Cart
                   </Button>
                 </Stack>
               </Grid2>
@@ -224,4 +227,5 @@ const header = () => {
     </>
   );
 };
-export default header;
+
+export default Header;
